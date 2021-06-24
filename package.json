@@ -1,0 +1,37 @@
+{
+  "name": "kate-rebrand",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "![amazona](/template/images/amazona.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd frontend && npm install && npm run build",
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugojeff/cj-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mugojeff/cj-app/issues"
+  },
+  "homepage": "https://github.com/mugojeff/cj-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.12.14",
+    "multer": "^1.4.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "nodemon": "^2.0.7"
+  },
+  "engines":{"node": "15.12.0", "npm":"7.6.3"}
+}
