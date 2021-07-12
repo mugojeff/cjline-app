@@ -57,4 +57,19 @@ export default function PaymentMethodScreen(props) {
               id="mpesa"
               value="Mpesa"
               name="paymentMethod"
-              
+              required
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            ></input>
+            <label htmlFor="mpesa">Mpesa</label>
+          </div>
+        </div>
+        <div>
+          <label />
+          <button className="primary" type="submit">
+            Continue
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
